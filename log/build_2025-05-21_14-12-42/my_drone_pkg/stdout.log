@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target drone_mission_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/drone_mission_node.dir/src/drone_mission_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable drone_mission_node[0m
+[100%] Built target drone_mission_node
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/install/my_drone_pkg/lib/my_drone_pkg/drone_mission_node
+-- Set runtime path of "/root/ros2_ws/install/my_drone_pkg/lib/my_drone_pkg/drone_mission_node" to ""
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/ament_index/resource_index/package_run_dependencies/my_drone_pkg
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/ament_index/resource_index/parent_prefix_path/my_drone_pkg
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/environment/path.sh
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/environment/path.dsv
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/local_setup.bash
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/local_setup.sh
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/local_setup.zsh
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/local_setup.dsv
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/package.dsv
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/ament_index/resource_index/packages/my_drone_pkg
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/cmake/my_drone_pkgConfig.cmake
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/cmake/my_drone_pkgConfig-version.cmake
+-- Installing: /root/ros2_ws/install/my_drone_pkg/share/my_drone_pkg/package.xml

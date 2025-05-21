@@ -1,0 +1,56 @@
+[0.069s] Invoking command in '/root/ros2_ws/build/my_drone_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/my_drone_pkg -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg
+[0.817s] -- The C compiler identification is GNU 11.4.0
+[1.489s] -- The CXX compiler identification is GNU 11.4.0
+[1.545s] -- Detecting C compiler ABI info
+[2.209s] -- Detecting C compiler ABI info - done
+[2.228s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.229s] -- Detecting C compile features
+[2.230s] -- Detecting C compile features - done
+[2.234s] -- Detecting CXX compiler ABI info
+[2.857s] -- Detecting CXX compiler ABI info - done
+[2.875s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.875s] -- Detecting CXX compile features
+[2.876s] -- Detecting CXX compile features - done
+[2.890s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.631s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.900s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[3.959s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.963s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.972s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.989s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.009s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.090s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.097s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.636s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.686s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.755s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.767s] -- Looking for pthread.h
+[5.339s] -- Looking for pthread.h - found
+[5.339s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.983s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.984s] -- Found Threads: TRUE  
+[6.065s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.086s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.116s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[6.139s] [31mCMake Error at CMakeLists.txt:27 (target_link_libraries):
+[6.139s]   The plain signature for target_link_libraries has already been used with
+[6.139s]   the target "drone_mission_node".  All uses of target_link_libraries with a
+[6.139s]   target must be either all-keyword or all-plain.
+[6.139s] 
+[6.139s]   The uses of the plain signature are here:
+[6.139s] 
+[6.140s]    * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)
+[6.140s] 
+[6.140s] 
+[6.140s] [0m
+[6.145s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.353s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.354s] -- Configured cppcheck include dirs: 
+[6.354s] -- Configured cppcheck exclude dirs and/or files: 
+[6.356s] -- Added test 'lint_cmake' to check CMake code style
+[6.357s] -- Added test 'uncrustify' to check C / C++ code style
+[6.357s] -- Configured uncrustify additional arguments: 
+[6.358s] -- Added test 'xmllint' to check XML markup files
+[6.362s] -- Configuring incomplete, errors occurred!
+[6.362s] See also "/root/ros2_ws/build/my_drone_pkg/CMakeFiles/CMakeOutput.log".
+[6.396s] Invoked command in '/root/ros2_ws/build/my_drone_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/my_drone_pkg -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg

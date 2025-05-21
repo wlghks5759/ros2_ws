@@ -1,0 +1,2 @@
+Invoking command in '/root/ros2_ws/build/my_drone_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/my_drone_pkg -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg
+Invoked command in '/root/ros2_ws/build/my_drone_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/my_drone_pkg -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg

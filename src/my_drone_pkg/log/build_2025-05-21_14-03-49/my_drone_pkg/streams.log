@@ -1,0 +1,30 @@
+[0.124s] Invoking command in '/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg -- -j8 -l8
+[0.610s] [35m[1mConsolidate compiler generated dependencies of target drone_mission_node[0m
+[0.720s] [ 50%] [32mBuilding CXX object CMakeFiles/drone_mission_node.dir/src/drone_mission_node.cpp.o[0m
+[4.500s] [01m[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:[m[K In member function ‘[01m[Kvoid DroneMissionNode::run_mission()[m[K’:
+[4.500s] [01m[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:245:30:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koffboard_start_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.500s]   245 |             Offboard::Result [01;35m[Koffboard_start_result[m[K = offboard_->start();
+[4.501s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[7.339s] [100%] [32m[1mLinking CXX executable drone_mission_node[0m
+[8.129s] [100%] Built target drone_mission_node
+[8.198s] Invoked command in '/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg -- -j8 -l8
+[8.300s] Invoking command in '/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg
+[8.354s] -- Install configuration: ""
+[8.358s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/lib/my_drone_pkg/drone_mission_node
+[8.363s] -- Set runtime path of "/root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/lib/my_drone_pkg/drone_mission_node" to ""
+[8.363s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/ament_index/resource_index/package_run_dependencies/my_drone_pkg
+[8.364s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/ament_index/resource_index/parent_prefix_path/my_drone_pkg
+[8.364s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/environment/ament_prefix_path.sh
+[8.364s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/environment/ament_prefix_path.dsv
+[8.364s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/environment/path.sh
+[8.365s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/environment/path.dsv
+[8.365s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/local_setup.bash
+[8.365s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/local_setup.sh
+[8.365s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/local_setup.zsh
+[8.365s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/local_setup.dsv
+[8.366s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/package.dsv
+[8.366s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/ament_index/resource_index/packages/my_drone_pkg
+[8.366s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/cmake/my_drone_pkgConfig.cmake
+[8.366s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/cmake/my_drone_pkgConfig-version.cmake
+[8.366s] -- Installing: /root/ros2_ws/src/my_drone_pkg/install/my_drone_pkg/share/my_drone_pkg/package.xml
+[8.378s] Invoked command in '/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg

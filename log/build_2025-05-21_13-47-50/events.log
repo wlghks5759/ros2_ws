@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.002296] (my_drone_pkg) JobQueued: {'identifier': 'my_drone_pkg', 'dependencies': OrderedDict()}
+[0.004784] (my_drone_pkg) JobStarted: {'identifier': 'my_drone_pkg'}
+[0.070037] (my_drone_pkg) JobProgress: {'identifier': 'my_drone_pkg', 'progress': 'cmake'}
+[0.071365] (my_drone_pkg) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/my_drone_pkg', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg'], 'cwd': '/root/ros2_ws/build/my_drone_pkg', 'env': OrderedDict([('USER', 'root'), ('HOSTNAME', 'c0140cadd148'), ('GIT_ASKPASS', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src/my_drone_pkg/src'), ('TERM_PROGRAM_VERSION', '1.100.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-43f82010-092a-4149-adf1-3ffa03be1be7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('UV_USE_IO_URING', '0'), ('PATH', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-c4768c254f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros2_ws/build/my_drone_pkg'), ('RESOLUTION', '1440x900'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100474] (-) TimerEvent: {}
+[0.231800] (-) TimerEvent: {}
+[0.333783] (-) TimerEvent: {}
+[0.434656] (-) TimerEvent: {}
+[0.535531] (-) TimerEvent: {}
+[0.636360] (-) TimerEvent: {}
+[0.737517] (-) TimerEvent: {}
+[0.820964] (my_drone_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.838350] (-) TimerEvent: {}
+[0.939829] (-) TimerEvent: {}
+[1.041002] (-) TimerEvent: {}
+[1.143638] (-) TimerEvent: {}
+[1.248378] (-) TimerEvent: {}
+[1.352766] (-) TimerEvent: {}
+[1.457235] (-) TimerEvent: {}
+[1.492762] (my_drone_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.549646] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.558576] (-) TimerEvent: {}
+[1.659382] (-) TimerEvent: {}
+[1.760595] (-) TimerEvent: {}
+[1.861533] (-) TimerEvent: {}
+[1.962432] (-) TimerEvent: {}
+[2.063314] (-) TimerEvent: {}
+[2.165539] (-) TimerEvent: {}
+[2.213843] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.232953] (my_drone_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.233408] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.234470] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.238851] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.266450] (-) TimerEvent: {}
+[2.368312] (-) TimerEvent: {}
+[2.469352] (-) TimerEvent: {}
+[2.570395] (-) TimerEvent: {}
+[2.671339] (-) TimerEvent: {}
+[2.772463] (-) TimerEvent: {}
+[2.861921] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.873351] (-) TimerEvent: {}
+[2.879411] (my_drone_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.879792] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.880689] (my_drone_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.894649] (my_drone_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.974372] (-) TimerEvent: {}
+[3.075659] (-) TimerEvent: {}
+[3.177789] (-) TimerEvent: {}
+[3.278446] (-) TimerEvent: {}
+[3.379422] (-) TimerEvent: {}
+[3.480342] (-) TimerEvent: {}
+[3.581354] (-) TimerEvent: {}
+[3.635737] (my_drone_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.682639] (-) TimerEvent: {}
+[3.784576] (-) TimerEvent: {}
+[3.885372] (-) TimerEvent: {}
+[3.904606] (my_drone_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.963236] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.968048] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.977046] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.986485] (-) TimerEvent: {}
+[3.993198] (my_drone_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.013259] (my_drone_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.087326] (-) TimerEvent: {}
+[4.094659] (my_drone_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.101403] (my_drone_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.190019] (-) TimerEvent: {}
+[4.291799] (-) TimerEvent: {}
+[4.392535] (-) TimerEvent: {}
+[4.493510] (-) TimerEvent: {}
+[4.594671] (-) TimerEvent: {}
+[4.640780] (my_drone_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.690867] (my_drone_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.695887] (-) TimerEvent: {}
+[4.759873] (my_drone_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.771243] (my_drone_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.796332] (-) TimerEvent: {}
+[4.897554] (-) TimerEvent: {}
+[4.999815] (-) TimerEvent: {}
+[5.100767] (-) TimerEvent: {}
+[5.202291] (-) TimerEvent: {}
+[5.303432] (-) TimerEvent: {}
+[5.343236] (my_drone_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.343725] (my_drone_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.405785] (-) TimerEvent: {}
+[5.506359] (-) TimerEvent: {}
+[5.612173] (-) TimerEvent: {}
+[5.713321] (-) TimerEvent: {}
+[5.817123] (-) TimerEvent: {}
+[5.927481] (-) TimerEvent: {}
+[5.987097] (my_drone_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.989124] (my_drone_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.031039] (-) TimerEvent: {}
+[6.069418] (my_drone_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[6.090761] (my_drone_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.120631] (my_drone_pkg) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[6.131550] (-) TimerEvent: {}
+[6.143468] (my_drone_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:27 (target_link_libraries):\n'}
+[6.143864] (my_drone_pkg) StderrLine: {'line': b'  The plain signature for target_link_libraries has already been used with\n'}
+[6.143929] (my_drone_pkg) StderrLine: {'line': b'  the target "drone_mission_node".  All uses of target_link_libraries with a\n'}
+[6.143981] (my_drone_pkg) StderrLine: {'line': b'  target must be either all-keyword or all-plain.\n'}
+[6.144054] (my_drone_pkg) StderrLine: {'line': b'\n'}
+[6.144126] (my_drone_pkg) StderrLine: {'line': b'  The uses of the plain signature are here:\n'}
+[6.144202] (my_drone_pkg) StderrLine: {'line': b'\n'}
+[6.144288] (my_drone_pkg) StderrLine: {'line': b'   * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)\n'}
+[6.144336] (my_drone_pkg) StderrLine: {'line': b'\n'}
+[6.144381] (my_drone_pkg) StderrLine: {'line': b'\n'}
+[6.144444] (my_drone_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[6.149100] (my_drone_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.232936] (-) TimerEvent: {}
+[6.334502] (-) TimerEvent: {}
+[6.357988] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.358598] (my_drone_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[6.358738] (my_drone_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.360559] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.361622] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.361775] (my_drone_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.362543] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.366222] (my_drone_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[6.366764] (my_drone_pkg) StdoutLine: {'line': b'See also "/root/ros2_ws/build/my_drone_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[6.399984] (my_drone_pkg) CommandEnded: {'returncode': 1}
+[6.435745] (-) TimerEvent: {}
+[6.539454] (-) TimerEvent: {}
+[6.546808] (my_drone_pkg) JobEnded: {'identifier': 'my_drone_pkg', 'rc': 1}
+[6.558540] (-) EventReactorShutdown: {}

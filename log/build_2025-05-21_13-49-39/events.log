@@ -1,0 +1,235 @@
+[0.000000] (-) TimerEvent: {}
+[0.001554] (my_drone_pkg) JobQueued: {'identifier': 'my_drone_pkg', 'dependencies': OrderedDict()}
+[0.003589] (my_drone_pkg) JobStarted: {'identifier': 'my_drone_pkg'}
+[0.069727] (my_drone_pkg) JobProgress: {'identifier': 'my_drone_pkg', 'progress': 'cmake'}
+[0.071928] (my_drone_pkg) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/my_drone_pkg', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/my_drone_pkg'], 'cwd': '/root/ros2_ws/build/my_drone_pkg', 'env': OrderedDict([('USER', 'root'), ('HOSTNAME', 'c0140cadd148'), ('GIT_ASKPASS', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src/my_drone_pkg/src'), ('TERM_PROGRAM_VERSION', '1.100.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-43f82010-092a-4149-adf1-3ffa03be1be7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('UV_USE_IO_URING', '0'), ('PATH', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-c4768c254f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros2_ws/build/my_drone_pkg'), ('RESOLUTION', '1440x900'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.101569] (-) TimerEvent: {}
+[0.198499] (my_drone_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.202548] (-) TimerEvent: {}
+[0.307983] (-) TimerEvent: {}
+[0.408998] (-) TimerEvent: {}
+[0.510040] (-) TimerEvent: {}
+[0.615002] (-) TimerEvent: {}
+[0.649854] (my_drone_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.695722] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.699010] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.706168] (my_drone_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.715971] (-) TimerEvent: {}
+[0.719592] (my_drone_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.736589] (my_drone_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.775693] (my_drone_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.777946] (my_drone_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.818085] (-) TimerEvent: {}
+[0.919144] (-) TimerEvent: {}
+[0.945729] (my_drone_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.020744] (-) TimerEvent: {}
+[1.036920] (my_drone_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.057709] (my_drone_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.080000] (my_drone_pkg) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.100978] (my_drone_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.120897] (-) TimerEvent: {}
+[1.223078] (-) TimerEvent: {}
+[1.281849] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.282231] (my_drone_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.282305] (my_drone_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.283393] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.284250] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.284416] (my_drone_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.284683] (my_drone_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.288427] (my_drone_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.324073] (-) TimerEvent: {}
+[1.373644] (my_drone_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.391131] (my_drone_pkg) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/my_drone_pkg\n'}
+[1.409049] (my_drone_pkg) CommandEnded: {'returncode': 0}
+[1.421667] (my_drone_pkg) JobProgress: {'identifier': 'my_drone_pkg', 'progress': 'build'}
+[1.421750] (my_drone_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/my_drone_pkg', '--', '-j8', '-l8'], 'cwd': '/root/ros2_ws/build/my_drone_pkg', 'env': OrderedDict([('USER', 'root'), ('HOSTNAME', 'c0140cadd148'), ('GIT_ASKPASS', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src/my_drone_pkg/src'), ('TERM_PROGRAM_VERSION', '1.100.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-43f82010-092a-4149-adf1-3ffa03be1be7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('UV_USE_IO_URING', '0'), ('PATH', '/root/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-c4768c254f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-581a8b88-9222-464c-8c10-0bd6d6b2a70a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros2_ws/build/my_drone_pkg'), ('RESOLUTION', '1440x900'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.424899] (-) TimerEvent: {}
+[1.525969] (-) TimerEvent: {}
+[1.627129] (-) TimerEvent: {}
+[1.728287] (-) TimerEvent: {}
+[1.829634] (-) TimerEvent: {}
+[1.835864] (my_drone_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/drone_mission_node.dir/src/drone_mission_node.cpp.o\x1b[0m\n'}
+[1.930052] (-) TimerEvent: {}
+[2.030922] (-) TimerEvent: {}
+[2.132032] (-) TimerEvent: {}
+[2.237416] (-) TimerEvent: {}
+[2.342947] (-) TimerEvent: {}
+[2.444144] (-) TimerEvent: {}
+[2.546464] (-) TimerEvent: {}
+[2.647058] (-) TimerEvent: {}
+[2.748164] (-) TimerEvent: {}
+[2.849219] (-) TimerEvent: {}
+[2.950641] (-) TimerEvent: {}
+[3.052407] (-) TimerEvent: {}
+[3.153369] (-) TimerEvent: {}
+[3.255636] (-) TimerEvent: {}
+[3.357039] (-) TimerEvent: {}
+[3.457952] (-) TimerEvent: {}
+[3.559270] (-) TimerEvent: {}
+[3.662113] (-) TimerEvent: {}
+[3.765159] (-) TimerEvent: {}
+[3.865937] (-) TimerEvent: {}
+[3.966975] (-) TimerEvent: {}
+[4.068069] (-) TimerEvent: {}
+[4.169129] (-) TimerEvent: {}
+[4.270141] (-) TimerEvent: {}
+[4.371157] (-) TimerEvent: {}
+[4.472714] (-) TimerEvent: {}
+[4.574407] (-) TimerEvent: {}
+[4.675371] (-) TimerEvent: {}
+[4.776996] (-) TimerEvent: {}
+[4.882315] (-) TimerEvent: {}
+[4.984026] (-) TimerEvent: {}
+[5.089926] (-) TimerEvent: {}
+[5.191143] (-) TimerEvent: {}
+[5.292630] (-) TimerEvent: {}
+[5.395054] (-) TimerEvent: {}
+[5.496118] (-) TimerEvent: {}
+[5.598016] (-) TimerEvent: {}
+[5.699069] (-) TimerEvent: {}
+[5.800316] (-) TimerEvent: {}
+[5.902284] (-) TimerEvent: {}
+[6.003036] (-) TimerEvent: {}
+[6.104082] (-) TimerEvent: {}
+[6.205368] (-) TimerEvent: {}
+[6.278899] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDroneMissionNode::DroneMissionNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.280523] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:83:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kas_float\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.280655] (my_drone_pkg) StderrLine: {'line': b'   83 |         target_relative_altitude_m_ = this->get_parameter("target_relative_altitude_m").\x1b[01;31m\x1b[Kas_float\x1b[m\x1b[K();\n'}
+[6.280774] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.280858] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:84:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kas_float\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.280930] (my_drone_pkg) StderrLine: {'line': b'   84 |         takeoff_altitude_m_ = this->get_parameter("takeoff_altitude_m").\x1b[01;31m\x1b[Kas_float\x1b[m\x1b[K();\n'}
+[6.281021] (my_drone_pkg) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.281094] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:85:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kas_float\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.281176] (my_drone_pkg) StderrLine: {'line': b'   85 |         arrival_threshold_m_ = this->get_parameter("arrival_threshold_m").\x1b[01;31m\x1b[Kas_float\x1b[m\x1b[K();\n'}
+[6.281291] (my_drone_pkg) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.281386] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:86:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kas_float\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.281478] (my_drone_pkg) StderrLine: {'line': b'   86 |         max_speed_m_s_ = this->get_parameter("max_speed_m_s").\x1b[01;31m\x1b[Kas_float\x1b[m\x1b[K();\n'}
+[6.281547] (my_drone_pkg) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.281617] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:87:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Parameter\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kas_float\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.281708] (my_drone_pkg) StderrLine: {'line': b'   87 |         max_vertical_speed_m_s_ = this->get_parameter("max_vertical_speed_m_s").\x1b[01;31m\x1b[Kas_float\x1b[m\x1b[K();\n'}
+[6.281776] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.295369] (my_drone_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.295595] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.295680] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.295746] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.295815] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.295876] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.295922] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.295966] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.296043] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.296129] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.296198] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.296271] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.296319] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual DroneMissionNode::~DroneMissionNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.296388] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:112:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.296461] (my_drone_pkg) StderrLine: {'line': b'  112 |                     RCLCPP_ERROR(this->get_logger(), "Failed to stop offboard: %s", Offboard::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(stop_result));\n'}
+[6.296521] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.297659] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DroneMissionNode::run_mission()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.298160] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:123:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KComponentType\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Mavsdk\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.298432] (my_drone_pkg) StderrLine: {'line': b'  123 |         mavsdk_ = std::make_shared<Mavsdk>(Mavsdk::Configuration{Mavsdk::\x1b[01;31m\x1b[KComponentType\x1b[m\x1b[K::GroundStation});\n'}
+[6.298716] (my_drone_pkg) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.299556] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:123:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Mavsdk::Configuration::Configuration(<brace-enclosed initializer list>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.299668] (my_drone_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:2\x1b[m\x1b[K:\n'}
+[6.299755] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:206:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Mavsdk::Configuration::Configuration(mavsdk::ComponentType)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.299828] (my_drone_pkg) StderrLine: {'line': b'  206 |         explicit \x1b[01;36m\x1b[KConfiguration\x1b[m\x1b[K(ComponentType component_type);\n'}
+[6.299923] (my_drone_pkg) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.299994] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:206:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[6.300179] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:199:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Mavsdk::Configuration::Configuration(uint8_t, uint8_t, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.300395] (my_drone_pkg) StderrLine: {'line': b'  199 |         explicit \x1b[01;36m\x1b[KConfiguration\x1b[m\x1b[K(\n'}
+[6.300473] (my_drone_pkg) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.300524] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:199:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[6.300570] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:190:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr mavsdk::Mavsdk::Configuration::Configuration(const mavsdk::Mavsdk::Configuration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.300617] (my_drone_pkg) StderrLine: {'line': b'  190 |     class \x1b[01;36m\x1b[KConfiguration\x1b[m\x1b[K {\n'}
+[6.300663] (my_drone_pkg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.300709] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/mavsdk/mavsdk.h:190:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[6.300753] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:123:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.300894] (my_drone_pkg) StderrLine: {'line': b'  123 |         mavsdk_ = std::make_shared<Mavsdk>(Mavsdk::Configuration\x1b[01;31m\x1b[K{\x1b[m\x1b[KMavsdk::ComponentType::GroundStation});\n'}
+[6.301187] (my_drone_pkg) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.301616] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:125:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class mavsdk::Mavsdk\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass mavsdk::Mavsdk\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadd_connection\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kadd_any_connection\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.301884] (my_drone_pkg) StderrLine: {'line': b'  125 |         ConnectionResult connection_result = mavsdk_->\x1b[01;31m\x1b[Kadd_connection\x1b[m\x1b[K(connection_url_);\n'}
+[6.302292] (my_drone_pkg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.302654] (my_drone_pkg) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Kadd_any_connection\x1b[m\x1b[K\n'}
+[6.305957] (-) TimerEvent: {}
+[6.346007] (my_drone_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.346532] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.346758] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.347082] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.347301] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.347513] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.347719] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.348020] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.348362] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.348672] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.348958] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.349263] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.349573] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:127:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconnection_result_str\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kconnection_result\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.349935] (my_drone_pkg) StderrLine: {'line': b'  127 |             RCLCPP_ERROR(this->get_logger(), "Connection failed: %s", \x1b[01;31m\x1b[Kconnection_result_str\x1b[m\x1b[K(connection_result));\n'}
+[6.350232] (my_drone_pkg) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.386180] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:205:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Action\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.386394] (my_drone_pkg) StderrLine: {'line': b'  205 |             RCLCPP_ERROR(this->get_logger(), "Arming failed: %s", Action::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(arm_result));\n'}
+[6.386505] (my_drone_pkg) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.387622] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:217:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Action\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.387730] (my_drone_pkg) StderrLine: {'line': b'  217 |             RCLCPP_ERROR(this->get_logger(), "Takeoff failed: %s", Action::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(takeoff_result));\n'}
+[6.387787] (my_drone_pkg) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.391128] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:255:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.391306] (my_drone_pkg) StderrLine: {'line': b'  255 |             RCLCPP_ERROR(this->get_logger(), "Offboard start failed: %s", Offboard::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(offboard_start_result));\n'}
+[6.391366] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.393862] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:293:96:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.394034] (my_drone_pkg) StderrLine: {'line': b'  293 |                     RCLCPP_ERROR(this->get_logger(), "Offboard re-start failed: %s", Offboard::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(re_offboard_start_result));\n'}
+[6.394116] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.395764] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:339:88:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.395889] (my_drone_pkg) StderrLine: {'line': b'  339 |                 RCLCPP_ERROR(this->get_logger(), "Offboard stop failed: %s", Offboard::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(offboard_stop_result));\n'}
+[6.395955] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.396438] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:347:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kjump to label \xe2\x80\x98\x1b[01m\x1b[Kland_sequence\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.396543] (my_drone_pkg) StderrLine: {'line': b'  347 |     \x1b[01;31m\x1b[Kland_sequence\x1b[m\x1b[K: // \xec\xb0\xa9\xeb\xa5\x99 \xec\x8b\x9c\xed\x80\x80\xec\x8a\xa4 \xec\x8b\x9c\xec\x9e\x91\xec\xa0\x90\n'}
+[6.396602] (my_drone_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.396659] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:237:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  from here\n'}
+[6.396726] (my_drone_pkg) StderrLine: {'line': b'  237 |         if (emergency_triggered_) { goto \x1b[01;36m\x1b[Kland_sequence\x1b[m\x1b[K; } // \xeb\xb9\x84\xec\x83\x81 \xec\x83\x81\xed\x99\xa9 \xec\x8b\x9c \xeb\xb0\x94\xeb\xa1\x9c \xec\xb0\xa9\xeb\xa5\x99\xec\x9c\xbc\xeb\xa1\x9c\n'}
+[6.396791] (my_drone_pkg) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.396864] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:253:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  crosses initialization of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard::Result offboard_start_result\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.396918] (my_drone_pkg) StderrLine: {'line': b'  253 |         Offboard::Result \x1b[01;36m\x1b[Koffboard_start_result\x1b[m\x1b[K = offboard_->start();\n'}
+[6.396984] (my_drone_pkg) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.397049] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:244:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  crosses initialization of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard::VelocityNedYaw initial_setpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.397112] (my_drone_pkg) StderrLine: {'line': b'  244 |         Offboard::VelocityNedYaw \x1b[01;36m\x1b[Kinitial_setpoint\x1b[m\x1b[K{}; // 0,0,0,0\n'}
+[6.397161] (my_drone_pkg) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.397693] (my_drone_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[6.398054] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[6.398260] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.398479] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.398709] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.398958] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.399235] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.399304] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.399996] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.400273] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.400524] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.400756] (my_drone_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:1\x1b[m\x1b[K:\n'}
+[6.400995] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:358:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Action\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.401191] (my_drone_pkg) StderrLine: {'line': b'  358 |             RCLCPP_ERROR(this->get_logger(), "Landing failed: %s", Action::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(land_result));\n'}
+[6.401366] (my_drone_pkg) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.401555] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:376:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Action\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.401622] (my_drone_pkg) StderrLine: {'line': b'  376 |             RCLCPP_ERROR(this->get_logger(), "Disarming failed: %s", Action::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(disarm_result));\n'}
+[6.401672] (my_drone_pkg) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.407086] (-) TimerEvent: {}
+[6.409018] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DroneMissionNode::handle_emergency_stop(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.409158] (my_drone_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/my_drone_pkg/src/drone_mission_node.cpp:402:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_str\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kmavsdk::Offboard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.409228] (my_drone_pkg) StderrLine: {'line': b'  402 |                 RCLCPP_ERROR(this->get_logger(), "Emergency: Failed to stop offboard: %s", Offboard::\x1b[01;31m\x1b[Kresult_str\x1b[m\x1b[K(stop_result));\n'}
+[6.409304] (my_drone_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.509116] (-) TimerEvent: {}
+[6.609930] (-) TimerEvent: {}
+[6.711134] (-) TimerEvent: {}
+[6.813198] (-) TimerEvent: {}
+[6.914717] (-) TimerEvent: {}
+[7.016516] (-) TimerEvent: {}
+[7.118008] (-) TimerEvent: {}
+[7.219169] (-) TimerEvent: {}
+[7.321160] (-) TimerEvent: {}
+[7.422107] (-) TimerEvent: {}
+[7.524176] (-) TimerEvent: {}
+[7.597844] (my_drone_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/drone_mission_node.dir/build.make:76: CMakeFiles/drone_mission_node.dir/src/drone_mission_node.cpp.o] Error 1\n'}
+[7.602467] (my_drone_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_mission_node.dir/all] Error 2\n'}
+[7.606944] (my_drone_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.623158] (my_drone_pkg) CommandEnded: {'returncode': 2}
+[7.624327] (-) TimerEvent: {}
+[7.654039] (my_drone_pkg) JobEnded: {'identifier': 'my_drone_pkg', 'rc': 2}
+[7.666755] (-) EventReactorShutdown: {}

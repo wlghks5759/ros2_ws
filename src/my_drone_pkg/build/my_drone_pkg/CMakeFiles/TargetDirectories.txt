@@ -1,0 +1,10 @@
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/uninstall.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/my_drone_pkg_uninstall.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/drone_mission_node.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/test.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/edit_cache.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/rebuild_cache.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/list_install_components.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/install.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/install/local.dir
+/root/ros2_ws/src/my_drone_pkg/build/my_drone_pkg/CMakeFiles/install/strip.dir
