@@ -41,24 +41,28 @@ double calculate_distance_haversine(double lat1, double lon1, double lat2, doubl
 }
 
 // 두 GPS 좌표 간의 방위각 계산 (초기 방위각)
-double calculate_bearing(double lat1, double lon1, double lat2, double lon2) {
-    double dLon = to_radians(lon2 - lon1);
-    lat1 = to_radians(lat1);
-    lon2 = to_radians(lon2); // lat2를 라디안으로 변환
+double calculate_bearing(double lat1_deg, double lon1_deg, double lat2_deg, double lon2_deg) {
 
-    double y = sin(dLon) * cos(lon2); // lon2가 아니라 lat2 여야 함
-    double x = cos(lat1) * sin(lon2) - sin(lat1) * cos(lon2) * cos(dLon); // lat2로 수정
+
+    double dLon_deg = lon2_deg - lon1_deg;
+    double dLon_rad = to_radians(dLon_deg);
+
+    double lat1_rad = to_radians(lat1_deg);
+    double lat2_rad = to_radians(lat2_deg); // 목표 위도를 라디안으로 변환
+
 
     // 수정된 계산 (일반적인 방위각 공식)
     // https://www.movable-type.co.uk/scripts/latlong.html
-    y = sin(dLon) * cos(to_radians(lat2)); // lat2를 사용
-    x = cos(to_radians(lat1)) * sin(to_radians(lat2)) -
-        sin(to_radians(lat1)) * cos(to_radians(lat2)) * cos(dLon);
+    double y_calc = sin(dLon_rad) * cos(lat2_rad);
+    double x_calc = cos(lat1_rad) * sin(lat2_rad) -
+                    sin(lat1_rad) * cos(lat2_rad) * cos(dLon_rad);
 
 
-    double bearing_rad = atan2(y, x);
-    double bearing_deg = fmod((bearing_rad * 180.0 / M_PI + 360.0), 360.0); // 0-360도 범위로 정규화
-    return bearing_deg;
+    double bearing_rad_calc = atan2(y_calc, x_calc);
+    double bearing_deg_calc = fmod((bearing_rad_calc * 180.0 / M_PI + 360.0), 360.0); // 0-360도 범위로 정규화
+
+
+    return bearing_deg_calc;
 }
 
 
@@ -71,7 +75,7 @@ public:
         this->declare_parameter<double>("target_longitude", 0.0);  // 기본값
         this->declare_parameter<float>("target_relative_altitude_m", 10.0f); // 기본 이륙 및 목표 고도
         this->declare_parameter<float>("takeoff_altitude_m", 5.0f);
-        this->declare_parameter<float>("arrival_threshold_m", 2.0f); // 목표 도달 반경
+        this->declare_parameter<float>("arrival_threshold_m", 5.0f); // 목표 도달 반경
         this->declare_parameter<float>("max_speed_m_s", 2.0f); // 최대 수평 속도
         this->declare_parameter<float>("max_vertical_speed_m_s", 1.0f); // 최대 수직 속도
 
@@ -311,9 +315,9 @@ private:
             double bearing_rad = to_radians(calculate_bearing(current_lat_local, current_lon_local, target_latitude_, target_longitude_));
             
             // 수평 속도 계산 (거리에 비례, 최대 속도 제한)
-            // 간단한 P 제어기처럼 작동. 더 정교한 제어 로직 필요할 수 있음.
-            float desired_speed = std::min(max_speed_m_s_, (float)distance_to_target * 0.5f ); // 거리가 멀면 빠르게, 가까우면 느리게 (0.5는 P 게인 역할)
-            desired_speed = std::max(0.5f, desired_speed); // 최소 속도 보장 (느리게라도 계속 가도록)
+            // 간단한 P 제어기처럼 작동.
+            float p_gain_horizontal = 0.2f; // 또는 0.1f 등 더 작은 값으로 시작
+            float desired_speed = std::min(max_speed_m_s_, (float)distance_to_target * p_gain_horizontal);
 
             float north_vel = desired_speed * cos(bearing_rad);
             float east_vel = desired_speed * sin(bearing_rad);
@@ -324,7 +328,7 @@ private:
 
             // Yaw는 목표 방향을 보도록 설정 (또는 현재 yaw 유지)
             // float target_yaw_deg = calculate_bearing(current_lat_local, current_lon_local, target_latitude_, target_longitude_);
-            float target_yaw_deg = telemetry_->attitude_euler().yaw_deg; // 현재 yaw 유지 또는 목표 방향으로 설정
+            float target_yaw_deg = calculate_bearing(current_lat_local, current_lon_local, target_latitude_, target_longitude_);
 
             Offboard::VelocityNedYaw speed_setpoint{};
             speed_setpoint.north_m_s = north_vel;
@@ -332,10 +336,16 @@ private:
             speed_setpoint.down_m_s = down_vel;
             speed_setpoint.yaw_deg = target_yaw_deg;
 
+                    // >>>>>>>>>>>> 여기에 로그 추가 <<<<<<<<<<<<
+            RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500, // 500ms (0.5초) 간격으로 로그 출력
+                "Setpoint: N:%.2f E:%.2f D:%.2f | Bearing:%.1f TargetYaw:%.1f | Dist:%.2f AltErr:%.2f",
+                north_vel, east_vel, down_vel,
+                calculate_bearing(current_lat_local, current_lon_local, target_latitude_, target_longitude_), // 방위각 직접 출력 (계산된 target_yaw_deg와 같아야 함)
+                target_yaw_deg, // 실제 적용되는 yaw setpoint
+                distance_to_target,
+                altitude_error); // 고도 오차도 함께 보면 좋음
+
             offboard_->set_velocity_ned(speed_setpoint);
-            // RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 500,
-            //                      "Setpoint: N:%.2f E:%.2f D:%.2f Y:%.1f",
-            //                      north_vel, east_vel, down_vel, target_yaw_deg);
 
             sleep_for(100ms); // MAVSDK는 내부적으로 20Hz로 전송하지만, 제어 루프 주기 조절
         }
